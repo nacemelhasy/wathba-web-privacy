@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية | Privacy Policy - وثبة (Wathba)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #422C77;
+      --primary-light: #5a3c9e;
+      --primary-bg: #f5f3f9;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --accent: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.8;
+      padding-bottom: 60px;
+    }
+
+    .lang-en {
+      font-family: 'Inter', sans-serif;
+      display: none;
+      direction: ltr;
+      text-align: left;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, #2a1b4e 100%);
+      color: white;
+      padding: 50px 0 40px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(66, 44, 119, 0.15);
+      position: relative;
+    }
+
+    .logo-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 8px 24px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #e2e8f0;
+      font-size: 1.05rem;
+    }
+
+    .lang-switcher-container {
+      margin-top: 24px;
+    }
+
+    .lang-btn {
+      background: white;
+      color: var(--primary);
+      border: none;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .content {
+      margin-top: 40px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      border: 1px solid var(--border);
+    }
+
+    .card h2 {
+      color: var(--primary);
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 2px solid var(--primary-bg);
+      padding-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      color: #334155;
+      margin: 18px 0 8px;
+    }
+
+    .card p {
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .card ul {
+      margin-right: 24px;
+      margin-bottom: 14px;
+    }
+
+    .lang-en .card ul {
+      margin-right: 0;
+      margin-left: 24px;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+      color: #334155;
+    }
+
+    .highlight-box {
+      background: var(--primary-bg);
+      border-right: 4px solid var(--primary);
+      padding: 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-weight: 500;
+    }
+
+    .lang-en .highlight-box {
+      border-right: none;
+      border-left: 4px solid var(--primary);
+    }
+
+    .delete-box {
+      background: #fef2f2;
+      border-right: 4px solid #ef4444;
+      padding: 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    .lang-en .delete-box {
+      border-right: none;
+      border-left: 4px solid #ef4444;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo-badge">تطبيق وثبة للخدمات اللوجستية والتوصيل | Wathba</div>
+      <h1 id="main-title">سياسة الخصوصية وحماية البيانات</h1>
+      <p id="sub-title">تاريخ آخر تحديث: 2026 | متوافقة مع معايير Apple App Store و Google Play</p>
+      <div class="lang-switcher-container">
+        <button class="lang-btn" onclick="toggleLanguage()">Switch to English / التبديل للإنجليزية</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container content">
+
+    <!-- ───────────────────── النسخة العربية ───────────────────── -->
+    <div id="content-ar">
+      <div class="card">
+        <h2>1. مقدمة وهوية التطبيق</h2>
+        <p>تلتزم منصة <strong>وثبة (Wathba)</strong> للخدمات اللوجستية والتوصيل باحترام وحماية خصوصية بيانات جميع المستخدمين (الزبائن، أصحاب المتاجر، ومناديب التوصيل) وفق أعلى معايير الأمان والشفافية الرقمية وبما يتوافق مع معايير <strong>Apple App Store Guideline 5.1.1</strong> و <strong>Google Play Data Safety</strong>.</p>
+        <p>توضح هذه السياسة كيفية جمع البيانات واستخدامها وحمايتها، وحقوق المستخدم الكاملة في إدارة بياناته أو حذف حسابه نهائياً.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. البيانات التي نجمعها (Data Collection)</h2>
+        <p>نقوم بجمع البيانات الضرورية فقط لتمكين إتمام خدمات التوصيل والتشغيل بكفاءة:</p>
+        <ul>
+          <li><strong>بيانات الهوية والاتصال:</strong> الاسم الكامل، رقم الهاتف الأساسي والاحتياطي (+218)، والمدينة لتسجيل الدخول والتنسيق بين أطراف الطلب.</li>
+          <li><strong>الموقع الجغرافي (GPS Location):</strong>
+            <ul>
+              <li><strong>في الواجهة (Foreground):</strong> لتحديد عنوان التسليم والاستلام على الخريطة للزبائن والمتاجر.</li>
+              <li><strong>في الخلفية (Background Location):</strong> مخصص <em>فقط لمناديب التوصيل (الكباتن)</em> أثناء تفعيل وضع "متصل/متاح للعمل" لتوجيه أقرب الطلبات وتمكين العميل والمتجر من تتبع مسار الشحنة بشكل حي ومباشر حتى التسليم.</li>
+            </ul>
+          </li>
+          <li><strong>الوسائط والمحادثات:</strong> الرسائل النصية والصور (كالفواتير والطرود) والمقاطع الصوتية المرسلة داخل محادثة الطلب لتنسيق عملية التوصيل.</li>
+          <li><strong>بيانات توثيق المناديب:</strong> صور الهوية ورخصة القيادة وبيانات المركبة للتحقق الأمني قبل اعتماد المندوب.</li>
+          <li><strong>المعاملات المالية الداخلية:</strong> رصيد المحفظة وسجل عمليات التوصيل لتسوية المستحقات.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>3. الغرض من جمع واستخدام البيانات</h2>
+        <ul>
+          <li>ربط العملاء بالمتاجر وأقرب مناديب توصيل متاحين.</li>
+          <li>تتبع حالة ومسار الشحنات بشكل لحظي ودقيق.</li>
+          <li>إرسال إشعارات لحظية (FCM) بحالة الطلبات وتنبيهات المحادثة.</li>
+          <li>ضمان أمان وسلامة المعاملات ومنع أي أنشطة احتيالية.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>4. الخدمات الخارجية ومشاركة البيانات (Third Parties)</h2>
+        <p>نحن لا نبيع أو نشارك أو نؤجر أي بيانات شخصية لأي جهات إعلانية أو تسويقية خارجية. تتم معالجة البيانات عبر خدمات سحابية عالمية مشفرة:</p>
+        <ul>
+          <li><strong>Google Firebase:</strong> للمصادقة وتخزين البيانات السحابية المشفرة وإرسال الإشعارات.</li>
+          <li><strong>Google Maps Platform:</strong> لعرض الخرائط وحساب مسارات ومسافات التوصيل.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>5. الأذونات المطلوبة (App Permissions)</h2>
+        <ul>
+          <li><strong>الموقع الجغرافي (Location):</strong> لتحديد نقطة الاستلام والتسليم والتتبع الحي للمندوب.</li>
+          <li><strong>الإشعارات (Notifications):</strong> لإرسال تحديثات حالة الطلب وأجراس التنبيه.</li>
+          <li><strong>الكاميرا والوسائط (Camera & Photos):</strong> لرفع الصورة الشخصية أو صور الطرود وتوثيق التسليم.</li>
+          <li><strong>الميكروفون (Microphone):</strong> لتسجيل الرسائل الصوتية داخل المحادثات للتنسيق.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>6. حذف الحساب والبيانات (Account & Data Deletion)</h2>
+        <div class="delete-box">
+          <p><strong>حق حذف الحساب مكفول بالكامل (وفق متطلبات Apple 5.1.1):</strong></p>
+          <p>يحق للمستخدم في أي وقت حذف حسابه وجميع بياناته بشكل نهائي ومباشر من داخل التطبيق عبر المسار:</p>
+          <p>👉 <strong>الملف الشخصي > إعدادات الحساب > حذف الحساب</strong></p>
+          <p>عند تأكيد الحذف، يتم مسح بيانات المستخدم، أرقام التواصل، العناوين، وسجلات المحادثات نهائياً من خوادم التطبيق فوراً.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>7. خصوصية الأطفال (Children's Privacy)</h2>
+        <p>تطبيق وثبة غير موجه للأطفال دون سن 18 عاماً، ولا نقوم عن علم بجمع أي بيانات شخصية من القاصرين. في حال تم اكتشاف أي بيانات مسجلة لقاصر، سيتم حذفها فوراً.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. التواصل والدعم الفني</h2>
+        <p>إذا كان لديك أي استفسار حول سياسة الخصوصية أو ترغب في الاستفسار عن بياناتك، يمكنك التواصل معنا عبر الدعم الفني داخل التطبيق أو عبر البريد الإلكتروني:</p>
+        <p class="highlight-box">📧 البريد الإلكتروني للدعم: support@wathba.ly</p>
+      </div>
+    </div>
+
+    <!-- ───────────────────── English Version ───────────────────── -->
+    <div id="content-en" class="lang-en">
+      <div class="card">
+        <h2>1. Introduction & Overview</h2>
+        <p><strong>Wathba</strong> ("we", "our", or "us") is dedicated to protecting the privacy and personal data of all users (customers, merchants, and delivery drivers). This Privacy Policy explains our practices in compliance with <strong>Apple App Store Review Guideline 5.1.1</strong> and <strong>Google Play Data Safety</strong> regulations.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Data We Collect</h2>
+        <ul>
+          <li><strong>Personal & Identity Information:</strong> Full name, primary & backup phone number (+218), city, and optional profile picture.</li>
+          <li><strong>Precise Location Data (GPS):</strong>
+            <ul>
+              <li><strong>Foreground Location:</strong> Used for customers and stores to set pickup/delivery addresses on the map and find nearby services.</li>
+              <li><strong>Background Location:</strong> Exclusively collected for delivery drivers when they switch their status to "Online/Available" to dispatch nearby delivery orders and enable real-time tracking for customers until the delivery is fulfilled.</li>
+            </ul>
+          </li>
+          <li><strong>Media & Communications:</strong> In-app chat messages, attached images (e.g. package photos, receipts), and voice audio messages recorded for order coordination.</li>
+          <li><strong>Driver Verification Documents:</strong> National ID, driver's license, and vehicle registration for driver onboarding verification.</li>
+          <li><strong>In-App Wallet:</strong> In-app balance and delivery transaction history.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>3. Purposes of Data Processing</h2>
+        <ul>
+          <li>To facilitate, process, and complete delivery orders between customers, stores, and drivers.</li>
+          <li>To provide real-time shipment location tracking.</li>
+          <li>To send critical push notifications (order updates, chat messages, system alerts).</li>
+          <li>To maintain platform security and prevent fraudulent transactions.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>4. Third-Party Services & Data Sharing</h2>
+        <p>We strictly do not sell, rent, or trade personal data with any third-party advertisers. We rely only on trusted industry-standard infrastructure:</p>
+        <ul>
+          <li><strong>Google Firebase:</strong> Authentication, encrypted cloud database (Firestore), cloud storage, and push notifications (FCM).</li>
+          <li><strong>Google Maps Platform:</strong> For interactive maps, address lookup, and route calculations.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>5. App Permissions</h2>
+        <ul>
+          <li><strong>Location:</strong> Required for address positioning and live delivery tracking.</li>
+          <li><strong>Notifications:</strong> Required to notify users of order status updates and messages.</li>
+          <li><strong>Camera & Photos:</strong> Required for uploading profile pictures, documentation, and parcel verification photos.</li>
+          <li><strong>Microphone:</strong> Required for recording voice messages inside order chats.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>6. Account & Data Deletion (Apple Guideline 5.1.1(v))</h2>
+        <div class="delete-box">
+          <p><strong>Users have full control to permanently delete their account at any time:</strong></p>
+          <p>You can directly delete your account and all associated data inside the app by navigating to:</p>
+          <p>👉 <strong>Profile > Account Settings > Delete Account</strong></p>
+          <p>Upon confirmation, all personal profiles, phone numbers, addresses, and chat history are permanently and immediately erased from our production servers.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>7. Children's Privacy (COPPA / GDPR-K)</h2>
+        <p>Wathba does not knowingly collect personal information from individuals under the age of 18. If we become aware that a minor's information has been provided, we will delete it immediately.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Contact & Privacy Inquiries</h2>
+        <p>If you have any questions or requests regarding this Privacy Policy or your personal data, please contact us via in-app customer support or email:</p>
+        <p class="highlight-box">📧 Support Email: support@wathba.ly</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Wathba Delivery Platform. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    let isEnglish = false;
+    function toggleLanguage() {
+      isEnglish = !isEnglish;
+      const arContent = document.getElementById('content-ar');
+      const enContent = document.getElementById('content-en');
+      const btn = document.querySelector('.lang-btn');
+      const mainTitle = document.getElementById('main-title');
+      const subTitle = document.getElementById('sub-title');
+
+      if (isEnglish) {
+        arContent.style.display = 'none';
+        enContent.style.display = 'block';
+        document.documentElement.dir = 'ltr';
+        document.documentElement.lang = 'en';
+        btn.innerText = 'التبديل إلى العربية / Switch to Arabic';
+        mainTitle.innerText = 'Privacy Policy & Data Protection';
+        subTitle.innerText = 'Last Updated: 2026 | Compliant with Apple App Store & Google Play Policies';
+      } else {
+        arContent.style.display = 'block';
+        enContent.style.display = 'none';
+        document.documentElement.dir = 'rtl';
+        document.documentElement.lang = 'ar';
+        btn.innerText = 'Switch to English / التبديل للإنجليزية';
+        mainTitle.innerText = 'سياسة الخصوصية وحماية البيانات';
+        subTitle.innerText = 'تاريخ آخر تحديث: 2026 | متوافقة مع معايير Apple App Store و Google Play';
+      }
+    }
+  </script>
+</body>
+</html>
