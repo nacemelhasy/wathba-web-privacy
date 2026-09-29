@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سياسة الخصوصية | Privacy Policy - وثبة (Wathba)</title>
+  <title>سياسة الخصوصية | Privacy Policy - وثبة ووثاب (Wathba & Wathaab)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,6 +12,8 @@
       --primary: #422C77;
       --primary-light: #5a3c9e;
       --primary-bg: #f5f3f9;
+      --driver-accent: #0284c7;
+      --driver-bg: #f0f9ff;
       --text-main: #1e293b;
       --text-muted: #64748b;
       --bg: #f8fafc;
@@ -42,30 +44,43 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 920px;
       margin: 0 auto;
       padding: 0 20px;
     }
 
     header {
-      background: linear-gradient(135deg, var(--primary) 0%, #2a1b4e 100%);
+      background: linear-gradient(135deg, var(--primary) 0%, #1e1138 100%);
       color: white;
-      padding: 50px 0 40px;
+      padding: 50px 0 45px;
       text-align: center;
-      box-shadow: 0 4px 20px rgba(66, 44, 119, 0.15);
-      position: relative;
+      box-shadow: 0 4px 20px rgba(66, 44, 119, 0.2);
     }
 
-    .logo-badge {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.15);
+    .apps-badges-container {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.12);
       backdrop-filter: blur(10px);
-      padding: 8px 24px;
+      padding: 8px 18px;
       border-radius: 50px;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      margin-bottom: 16px;
       border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .app-badge.driver {
+      background: rgba(2, 132, 199, 0.25);
+      border-color: rgba(56, 189, 248, 0.4);
     }
 
     header h1 {
@@ -80,25 +95,25 @@
     }
 
     .lang-switcher-container {
-      margin-top: 24px;
+      margin-top: 25px;
     }
 
     .lang-btn {
       background: white;
       color: var(--primary);
       border: none;
-      padding: 8px 20px;
-      border-radius: 20px;
+      padding: 10px 24px;
+      border-radius: 25px;
       font-weight: 700;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       cursor: pointer;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
       transition: all 0.2s ease;
     }
 
     .lang-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
     }
 
     .content {
@@ -107,17 +122,17 @@
 
     .card {
       background: var(--card-bg);
-      border-radius: 16px;
-      padding: 30px;
-      margin-bottom: 24px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      border-radius: 18px;
+      padding: 32px;
+      margin-bottom: 26px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
       border: 1px solid var(--border);
     }
 
     .card h2 {
       color: var(--primary);
-      font-size: 1.4rem;
-      margin-bottom: 16px;
+      font-size: 1.45rem;
+      margin-bottom: 18px;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -126,9 +141,12 @@
     }
 
     .card h3 {
-      font-size: 1.15rem;
-      color: #334155;
-      margin: 18px 0 8px;
+      font-size: 1.2rem;
+      color: #1e293b;
+      margin: 20px 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .card p {
@@ -138,7 +156,7 @@
 
     .card ul {
       margin-right: 24px;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
 
     .lang-en .card ul {
@@ -151,9 +169,37 @@
       color: #334155;
     }
 
-    .highlight-box {
+    .app-box {
+      border-radius: 14px;
+      padding: 22px;
+      margin: 18px 0;
+    }
+
+    .app-box.customer {
       background: var(--primary-bg);
-      border-right: 4px solid var(--primary);
+      border: 1px solid rgba(66, 44, 119, 0.15);
+      border-right: 5px solid var(--primary);
+    }
+
+    .lang-en .app-box.customer {
+      border-right: 1px solid rgba(66, 44, 119, 0.15);
+      border-left: 5px solid var(--primary);
+    }
+
+    .app-box.driver {
+      background: var(--driver-bg);
+      border: 1px solid rgba(2, 132, 199, 0.2);
+      border-right: 5px solid var(--driver-accent);
+    }
+
+    .lang-en .app-box.driver {
+      border-right: 1px solid rgba(2, 132, 199, 0.2);
+      border-left: 5px solid var(--driver-accent);
+    }
+
+    .highlight-box {
+      background: #f1f5f9;
+      border-right: 4px solid var(--text-muted);
       padding: 16px;
       border-radius: 8px;
       margin: 16px 0;
@@ -162,27 +208,28 @@
 
     .lang-en .highlight-box {
       border-right: none;
-      border-left: 4px solid var(--primary);
+      border-left: 4px solid var(--text-muted);
     }
 
     .delete-box {
       background: #fef2f2;
-      border-right: 4px solid #ef4444;
-      padding: 16px;
-      border-radius: 8px;
-      margin: 16px 0;
+      border: 1px solid #fee2e2;
+      border-right: 5px solid #ef4444;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 18px 0;
     }
 
     .lang-en .delete-box {
-      border-right: none;
-      border-left: 4px solid #ef4444;
+      border-right: 1px solid #fee2e2;
+      border-left: 5px solid #ef4444;
     }
 
     footer {
       text-align: center;
       color: var(--text-muted);
-      font-size: 0.9rem;
-      margin-top: 40px;
+      font-size: 0.95rem;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -190,9 +237,12 @@
 
   <header>
     <div class="container">
-      <div class="logo-badge">تطبيق وثبة للخدمات اللوجستية والتوصيل | Wathba</div>
+      <div class="apps-badges-container">
+        <div class="app-badge">🛍️ تطبيق وثبة (للزبائن والمتاجر) | Wathba</div>
+        <div class="app-badge driver">🚗 تطبيق وثاب (للمناديب والكباتن) | Wathaab Driver</div>
+      </div>
       <h1 id="main-title">سياسة الخصوصية وحماية البيانات</h1>
-      <p id="sub-title">تاريخ آخر تحديث: 2026 | متوافقة مع معايير Apple App Store و Google Play</p>
+      <p id="sub-title">منظومة وثبة للخدمات اللوجستية والتوصيل | تاريخ آخر تحديث: 2026</p>
       <div class="lang-switcher-container">
         <button class="lang-btn" onclick="toggleLanguage()">Switch to English / التبديل للإنجليزية</button>
       </div>
@@ -201,130 +251,154 @@
 
   <main class="container content">
 
-    <!-- ───────────────────── النسخة العربية ───────────────────── -->
+    <!-- ───────────────────── النسخة العربية (ARABIC) ───────────────────── -->
     <div id="content-ar">
       <div class="card">
-        <h2>1. مقدمة وهوية التطبيق</h2>
-        <p>تلتزم منصة <strong>وثبة (Wathba)</strong> للخدمات اللوجستية والتوصيل باحترام وحماية خصوصية بيانات جميع المستخدمين (الزبائن، أصحاب المتاجر، ومناديب التوصيل) وفق أعلى معايير الأمان والشفافية الرقمية وبما يتوافق مع معايير <strong>Apple App Store Guideline 5.1.1</strong> و <strong>Google Play Data Safety</strong>.</p>
-        <p>توضح هذه السياسة كيفية جمع البيانات واستخدامها وحمايتها، وحقوق المستخدم الكاملة في إدارة بياناته أو حذف حسابه نهائياً.</p>
+        <h2>1. نطاق التطبيق وهوية المنظومة</h2>
+        <p>تُغطي سياسة الخصوصية هذه كلاً من التطبيقين الرسميين التابعين لمنصة <strong>وثبة (Wathba)</strong> للخدمات اللوجستية والتوصيل:</p>
+        <ul>
+          <li><strong>1. تطبيق "وثبة" (Wathba)</strong>: المخصص للعملاء وأصحاب المتاجر لطلب وتتبع وإدارة شحنات وطرود التوصيل (معرف الحزمة: <code>com.wathba.customer</code>).</li>
+          <li><strong>2. تطبيق "وثاب" (Wathaab Driver)</strong>: المخصص لمناديب وكباتن التوصيل لاستقبال وتنفيذ رحلات التوصيل وإدارة الأرباح (معرف الحزمة: <code>com.wathba.driver</code>).</li>
+        </ul>
+        <p>تلتزم المنظومة بحماية بيانات جميع المستخدمين وفق أعلى معايير الأمان والشفافية وبما يتوافق تماماً مع متطلبات <strong>Apple App Store Guideline 5.1.1</strong> و <strong>Google Play Data Safety</strong>.</p>
       </div>
 
       <div class="card">
-        <h2>2. البيانات التي نجمعها (Data Collection)</h2>
-        <p>نقوم بجمع البيانات الضرورية فقط لتمكين إتمام خدمات التوصيل والتشغيل بكفاءة:</p>
+        <h2>2. البيانات التي نجمعها في كل تطبيق</h2>
+
+        <div class="app-box customer">
+          <h3>🛍️ أولاً: تطبيق وثبة (الزبائن وأصحاب المتاجر):</h3>
+          <ul>
+            <li><strong>بيانات الحساب:</strong> الاسم الكامل، رقم الهاتف الأساسي والاحتياطي (+218)، والمدينة.</li>
+            <li><strong>الموقع الجغرافي المباشر (Foreground Location):</strong> يُستخدم فقط أثناء فتح التطبيق لتحديد مواقع الاستلام والتسليم على الخريطة ولعرض المتاجر القريبة.</li>
+            <li><strong>الوسائط والمحادثات:</strong> الرسائل النصية، الصور المرفوعة (كالفواتير وصور الطرود)، والتسجيلات الصوتية للتنسيق حول تفاصيل الطلب.</li>
+            <li><strong>بيانات العمليات:</strong> سجل الطلبات السابقة وحركة المحفظة الرقمية الداخلية.</li>
+          </ul>
+        </div>
+
+        <div class="app-box driver">
+          <h3>🚗 ثانياً: تطبيق وثاب (مناديب وكباتن التوصيل):</h3>
+          <ul>
+            <li><strong>بيانات المندوب:</strong> الاسم، البريد الإلكتروني، رقم الهاتف، والمدينة.</li>
+            <li><strong>مستندات التوثيق الأمني:</strong> صور بطاقة الهوية الوطنية، رخصة القيادة السارية، واستمارة وبيانات المركبة للتحقق والاعتماد الميداني.</li>
+            <li><strong>الموقع الجغرافي في الخلفية (Background Location):</strong> يجمع التطبيق بيانات الموقع اللحظي للمندوب حتى أثناء إغلاق الشاشة أو وجود التطبيق في الخلفية، <em>حصرياً عندما يقوم المندوب بتفعيل وضع "متصل / متاح للعمل"</em>، وذلك لتمكين توجيه أقرب الطلبات بدقة، وتزويد العميل والمتجر بتتبع حي ومباشر لمسار الشحنة حتى تسليمها. يتم إيقاف جمع الموقع فور تحويل الحالة إلى "غير متصل".</li>
+            <li><strong>المعاملات المالية:</strong> أرباح الرحلات، عمولة المنصة، وأمانات المتاجر المحصلة.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>3. سياسة استخدام الموقع الجغرافي (Location & Background Policy)</h2>
+        <p>تلتزم منظومة وثبة بالاستخدام المسؤول لبيانات الموقع الجغرافي (GPS):</p>
         <ul>
-          <li><strong>بيانات الهوية والاتصال:</strong> الاسم الكامل، رقم الهاتف الأساسي والاحتياطي (+218)، والمدينة لتسجيل الدخول والتنسيق بين أطراف الطلب.</li>
-          <li><strong>الموقع الجغرافي (GPS Location):</strong>
-            <ul>
-              <li><strong>في الواجهة (Foreground):</strong> لتحديد عنوان التسليم والاستلام على الخريطة للزبائن والمتاجر.</li>
-              <li><strong>في الخلفية (Background Location):</strong> مخصص <em>فقط لمناديب التوصيل (الكباتن)</em> أثناء تفعيل وضع "متصل/متاح للعمل" لتوجيه أقرب الطلبات وتمكين العميل والمتجر من تتبع مسار الشحنة بشكل حي ومباشر حتى التسليم.</li>
-            </ul>
-          </li>
-          <li><strong>الوسائط والمحادثات:</strong> الرسائل النصية والصور (كالفواتير والطرود) والمقاطع الصوتية المرسلة داخل محادثة الطلب لتنسيق عملية التوصيل.</li>
-          <li><strong>بيانات توثيق المناديب:</strong> صور الهوية ورخصة القيادة وبيانات المركبة للتحقق الأمني قبل اعتماد المندوب.</li>
-          <li><strong>المعاملات المالية الداخلية:</strong> رصيد المحفظة وسجل عمليات التوصيل لتسوية المستحقات.</li>
+          <li><strong>للزبائن:</strong> لا يتم تتبع الموقع في الخلفية نهائياً؛ يقتصر تحديد الموقع على الواجهة لتثبيت العنوان.</li>
+          <li><strong>للمناديب في تطبيق وثاب (UIBackgroundModes: location):</strong> يُعد جمع الموقع في الخلفية جوهرياً لوظيفة التوصيل اللوجستي؛ حيث يضمن استمرار إرشاد المندوب بالخريطة، وحساب المسافة وتكلفة الرحلة بدقة، وطمأنة العميل بتتبع موقع شحنته في الوقت الفعلي.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h2>3. الغرض من جمع واستخدام البيانات</h2>
+        <h2>4. الخدمات السحابية ومشاركة البيانات (Third Parties)</h2>
+        <p>نحن لا نبيع أو نؤجر أو نتاجر ببيانات المستخدمين لأي جهات إعلانية أو تسويقية خارجية إطلاقاً. نعتمد فقط على بنية تحتية سحابية مشفرة:</p>
         <ul>
-          <li>ربط العملاء بالمتاجر وأقرب مناديب توصيل متاحين.</li>
-          <li>تتبع حالة ومسار الشحنات بشكل لحظي ودقيق.</li>
-          <li>إرسال إشعارات لحظية (FCM) بحالة الطلبات وتنبيهات المحادثة.</li>
-          <li>ضمان أمان وسلامة المعاملات ومنع أي أنشطة احتيالية.</li>
+          <li><strong>Google Firebase:</strong> للمصادقة وتخزين البيانات السحابية المشفرة وإرسال الإشعارات اللحظية (FCM).</li>
+          <li><strong>Google Maps Platform:</strong> لعرض الخرائط وحساب مسارات ومسافات التوصيل بدقة.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h2>4. الخدمات الخارجية ومشاركة البيانات (Third Parties)</h2>
-        <p>نحن لا نبيع أو نشارك أو نؤجر أي بيانات شخصية لأي جهات إعلانية أو تسويقية خارجية. تتم معالجة البيانات عبر خدمات سحابية عالمية مشفرة:</p>
+        <h2>5. الأذونات المطلوبة في النظام (App Permissions)</h2>
         <ul>
-          <li><strong>Google Firebase:</strong> للمصادقة وتخزين البيانات السحابية المشفرة وإرسال الإشعارات.</li>
-          <li><strong>Google Maps Platform:</strong> لعرض الخرائط وحساب مسارات ومسافات التوصيل.</li>
+          <li><strong>الموقع (Location):</strong> لتحديد العناوين على الخريطة وللتتبع الحي لرحلة التوصيل.</li>
+          <li><strong>الإشعارات (Notifications):</strong> لإرسال تحديثات حالة الطلب ورسائل المحادثة الفورية وتنبيهات النظام.</li>
+          <li><strong>الكاميرا ومعرض الصور (Camera & Photos):</strong> لرفع الصورة الشخصية، مستندات توثيق المناديب، وإرفاق صور الطرود والفواتير كإثبات استلام/تسليم.</li>
+          <li><strong>الميكروفون (Microphone):</strong> لتسجيل الرسائل الصوتية داخل شات الطلب للتنسيق السريع.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h2>5. الأذونات المطلوبة (App Permissions)</h2>
-        <ul>
-          <li><strong>الموقع الجغرافي (Location):</strong> لتحديد نقطة الاستلام والتسليم والتتبع الحي للمندوب.</li>
-          <li><strong>الإشعارات (Notifications):</strong> لإرسال تحديثات حالة الطلب وأجراس التنبيه.</li>
-          <li><strong>الكاميرا والوسائط (Camera & Photos):</strong> لرفع الصورة الشخصية أو صور الطرود وتوثيق التسليم.</li>
-          <li><strong>الميكروفون (Microphone):</strong> لتسجيل الرسائل الصوتية داخل المحادثات للتنسيق.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>6. حذف الحساب والبيانات (Account & Data Deletion)</h2>
+        <h2>6. حذف الحساب والبيانات نهائياً (Apple Guideline 5.1.1(v))</h2>
         <div class="delete-box">
-          <p><strong>حق حذف الحساب مكفول بالكامل (وفق متطلبات Apple 5.1.1):</strong></p>
-          <p>يحق للمستخدم في أي وقت حذف حسابه وجميع بياناته بشكل نهائي ومباشر من داخل التطبيق عبر المسار:</p>
-          <p>👉 <strong>الملف الشخصي > إعدادات الحساب > حذف الحساب</strong></p>
-          <p>عند تأكيد الحذف، يتم مسح بيانات المستخدم، أرقام التواصل، العناوين، وسجلات المحادثات نهائياً من خوادم التطبيق فوراً.</p>
+          <p><strong>حق حذف الحساب مكفول لجميع مستخدمي تطبيقي وثبة ووثاب:</strong></p>
+          <p>يحق لأي مستخدم (زبون، متجر، أو مندوب) حذف حسابه وجميع بياناته فوراً وبشكل دائم ومباشر من داخل التطبيق:</p>
+          <ul>
+            <li><strong>في تطبيق وثبة:</strong> الملف الشخصي > إعدادات الحساب > حذف الحساب</li>
+            <li><strong>في تطبيق وثاب:</strong> الملف الشخصي > الإعدادات > خيارات الحساب > حذف الحساب</li>
+          </ul>
+          <p>عند تأكيد الحذف، يتم مسح كافة البيانات الشخصية، السجلات، والمحادثات نهائياً من خوادم النظام بشكل فوري وغير قابل للاسترجاع.</p>
         </div>
       </div>
 
       <div class="card">
         <h2>7. خصوصية الأطفال (Children's Privacy)</h2>
-        <p>تطبيق وثبة غير موجه للأطفال دون سن 18 عاماً، ولا نقوم عن علم بجمع أي بيانات شخصية من القاصرين. في حال تم اكتشاف أي بيانات مسجلة لقاصر، سيتم حذفها فوراً.</p>
+        <p>تطبيقات المنظومة غير موجهة للأطفال دون سن 18 عاماً، ولا نجمع عن علم أي بيانات شخصية لقاصرين.</p>
       </div>
 
       <div class="card">
-        <h2>8. التواصل والدعم الفني</h2>
-        <p>إذا كان لديك أي استفسار حول سياسة الخصوصية أو ترغب في الاستفسار عن بياناتك، يمكنك التواصل معنا عبر الدعم الفني داخل التطبيق أو عبر البريد الإلكتروني:</p>
-        <p class="highlight-box">📧 البريد الإلكتروني للدعم: support@wathba.ly</p>
+        <h2>8. الدعم الفني والتواصل</h2>
+        <p>لأي استفسارات قانونية أو فنية تتعلق ببياناتك في تطبيقي وثبة أو وثاب، يمكنك التواصل مع فريق الدعم الفني عبر:</p>
+        <p class="highlight-box">📧 البريد الإلكتروني الرسمي للدعم: support@wathba.ly</p>
       </div>
     </div>
 
-    <!-- ───────────────────── English Version ───────────────────── -->
+    <!-- ───────────────────── النسخة الإنجليزية (ENGLISH) ───────────────────── -->
     <div id="content-en" class="lang-en">
       <div class="card">
-        <h2>1. Introduction & Overview</h2>
-        <p><strong>Wathba</strong> ("we", "our", or "us") is dedicated to protecting the privacy and personal data of all users (customers, merchants, and delivery drivers). This Privacy Policy explains our practices in compliance with <strong>Apple App Store Review Guideline 5.1.1</strong> and <strong>Google Play Data Safety</strong> regulations.</p>
-      </div>
-
-      <div class="card">
-        <h2>2. Data We Collect</h2>
+        <h2>1. Scope & Applicable Applications</h2>
+        <p>This Privacy Policy governs both official mobile applications operated by the <strong>Wathba Logistics & Delivery Platform</strong>:</p>
         <ul>
-          <li><strong>Personal & Identity Information:</strong> Full name, primary & backup phone number (+218), city, and optional profile picture.</li>
-          <li><strong>Precise Location Data (GPS):</strong>
-            <ul>
-              <li><strong>Foreground Location:</strong> Used for customers and stores to set pickup/delivery addresses on the map and find nearby services.</li>
-              <li><strong>Background Location:</strong> Exclusively collected for delivery drivers when they switch their status to "Online/Available" to dispatch nearby delivery orders and enable real-time tracking for customers until the delivery is fulfilled.</li>
-            </ul>
-          </li>
-          <li><strong>Media & Communications:</strong> In-app chat messages, attached images (e.g. package photos, receipts), and voice audio messages recorded for order coordination.</li>
-          <li><strong>Driver Verification Documents:</strong> National ID, driver's license, and vehicle registration for driver onboarding verification.</li>
-          <li><strong>In-App Wallet:</strong> In-app balance and delivery transaction history.</li>
+          <li><strong>1. "Wathba" App (Customer & Merchant)</strong>: Dedicated to customers and store merchants for placing, managing, and tracking parcel and store deliveries (Bundle ID: <code>com.wathba.customer</code>).</li>
+          <li><strong>2. "Wathaab Driver" App (Courier & Driver)</strong>: Dedicated to registered delivery couriers and drivers for receiving orders, live navigation, and managing delivery earnings (Bundle ID: <code>com.wathba.driver</code>).</li>
         </ul>
+        <p>We are committed to maintaining the highest privacy and security standards in compliance with <strong>Apple App Store Review Guideline 5.1.1</strong> and <strong>Google Play Data Safety</strong> regulations.</p>
       </div>
 
       <div class="card">
-        <h2>3. Purposes of Data Processing</h2>
+        <h2>2. Data Collection by Application</h2>
+
+        <div class="app-box customer">
+          <h3>🛍️ 1. Wathba App (Customers & Merchants):</h3>
+          <ul>
+            <li><strong>Account & Contact Info:</strong> Full name, primary & backup phone number (+218), and city.</li>
+            <li><strong>Foreground Location Data (GPS):</strong> Used exclusively while the app is actively open to set delivery addresses and display nearby stores.</li>
+            <li><strong>Communications & Media:</strong> In-app chat messages, attached images (e.g. package photos, receipts), and voice audio messages for order coordination.</li>
+            <li><strong>Transaction History:</strong> Previous order history and internal digital wallet movements.</li>
+          </ul>
+        </div>
+
+        <div class="app-box driver">
+          <h3>🚗 2. Wathaab Driver App (Delivery Couriers):</h3>
+          <ul>
+            <li><strong>Driver Credentials:</strong> Full name, email address, phone number, and operating city.</li>
+            <li><strong>Driver Verification Documents:</strong> National ID, driver's license, and vehicle registration documents for verification and security approval.</li>
+            <li><strong>Background Location Data (GPS):</strong> The app collects real-time location data even when the app is in the background or screen is locked, <em>strictly when the driver sets their status to "Online / Available"</em>. This is essential to dispatch nearby orders and allow customers and merchants to track their parcel progress live until completed. Location collection stops immediately when the driver switches to "Offline".</li>
+            <li><strong>Financial Earnings:</strong> Delivery fees, earnings balance, and collected cash settlements.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>3. Location & Background Tracking Policy</h2>
         <ul>
-          <li>To facilitate, process, and complete delivery orders between customers, stores, and drivers.</li>
-          <li>To provide real-time shipment location tracking.</li>
-          <li>To send critical push notifications (order updates, chat messages, system alerts).</li>
-          <li>To maintain platform security and prevent fraudulent transactions.</li>
+          <li><strong>For Customers:</strong> No background location tracking is performed. Location is only accessed in foreground to position pickup/drop-off points.</li>
+          <li><strong>For Drivers (UIBackgroundModes: location):</strong> Background location is a core requirement for courier operations to provide real-time shipment tracking, calculate accurate route mileage, and maintain delivery dispatch accuracy while drivers use navigation tools.</li>
         </ul>
       </div>
 
       <div class="card">
         <h2>4. Third-Party Services & Data Sharing</h2>
-        <p>We strictly do not sell, rent, or trade personal data with any third-party advertisers. We rely only on trusted industry-standard infrastructure:</p>
+        <p>We strictly do not sell, rent, or trade personal data with third-party advertisers. We rely solely on enterprise-grade cloud providers:</p>
         <ul>
-          <li><strong>Google Firebase:</strong> Authentication, encrypted cloud database (Firestore), cloud storage, and push notifications (FCM).</li>
-          <li><strong>Google Maps Platform:</strong> For interactive maps, address lookup, and route calculations.</li>
+          <li><strong>Google Firebase:</strong> Authentication, encrypted cloud database (Firestore), secure cloud storage, and push notifications (FCM).</li>
+          <li><strong>Google Maps Platform:</strong> Interactive maps, geolocation, and route calculations.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h2>5. App Permissions</h2>
+        <h2>5. Required App Permissions</h2>
         <ul>
-          <li><strong>Location:</strong> Required for address positioning and live delivery tracking.</li>
-          <li><strong>Notifications:</strong> Required to notify users of order status updates and messages.</li>
-          <li><strong>Camera & Photos:</strong> Required for uploading profile pictures, documentation, and parcel verification photos.</li>
+          <li><strong>Location:</strong> Required for address positioning and live delivery trip tracking.</li>
+          <li><strong>Notifications:</strong> Required to deliver order alerts, chat messages, and system updates.</li>
+          <li><strong>Camera & Photo Library:</strong> Required for profile pictures, driver verification, and attaching proof-of-delivery parcel photos.</li>
           <li><strong>Microphone:</strong> Required for recording voice messages inside order chats.</li>
         </ul>
       </div>
@@ -332,22 +406,25 @@
       <div class="card">
         <h2>6. Account & Data Deletion (Apple Guideline 5.1.1(v))</h2>
         <div class="delete-box">
-          <p><strong>Users have full control to permanently delete their account at any time:</strong></p>
-          <p>You can directly delete your account and all associated data inside the app by navigating to:</p>
-          <p>👉 <strong>Profile > Account Settings > Delete Account</strong></p>
-          <p>Upon confirmation, all personal profiles, phone numbers, addresses, and chat history are permanently and immediately erased from our production servers.</p>
+          <p><strong>Direct Account Deletion is Guaranteed for All Users:</strong></p>
+          <p>Users of both apps can permanently delete their accounts and all associated data directly inside the respective app:</p>
+          <ul>
+            <li><strong>In Wathba (Customer):</strong> Profile > Account Settings > Delete Account</li>
+            <li><strong>In Wathaab (Driver):</strong> Profile > Settings > Account Options > Delete Account</li>
+          </ul>
+          <p>Upon confirmation, all personal information, contact records, locations, and chat logs are permanently and immediately erased from our production servers.</p>
         </div>
       </div>
 
       <div class="card">
-        <h2>7. Children's Privacy (COPPA / GDPR-K)</h2>
-        <p>Wathba does not knowingly collect personal information from individuals under the age of 18. If we become aware that a minor's information has been provided, we will delete it immediately.</p>
+        <h2>7. Children's Privacy</h2>
+        <p>Our applications are not directed toward individuals under 18 years of age. We do not knowingly collect personal data from minors.</p>
       </div>
 
       <div class="card">
-        <h2>8. Contact & Privacy Inquiries</h2>
-        <p>If you have any questions or requests regarding this Privacy Policy or your personal data, please contact us via in-app customer support or email:</p>
-        <p class="highlight-box">📧 Support Email: support@wathba.ly</p>
+        <h2>8. Contact & Privacy Support</h2>
+        <p>For any questions or privacy inquiries regarding either Wathba or Wathaab Driver, please contact our support team:</p>
+        <p class="highlight-box">📧 Official Support Email: support@wathba.ly</p>
       </div>
     </div>
 
@@ -355,7 +432,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 Wathba Delivery Platform. All rights reserved.</p>
+      <p>&copy; 2026 Wathba Delivery Platform (Wathba & Wathaab Driver). All rights reserved.</p>
     </div>
   </footer>
 
@@ -376,7 +453,7 @@
         document.documentElement.lang = 'en';
         btn.innerText = 'التبديل إلى العربية / Switch to Arabic';
         mainTitle.innerText = 'Privacy Policy & Data Protection';
-        subTitle.innerText = 'Last Updated: 2026 | Compliant with Apple App Store & Google Play Policies';
+        subTitle.innerText = 'Wathba Delivery Platform (Wathba & Wathaab Driver) | Last Updated: 2026';
       } else {
         arContent.style.display = 'block';
         enContent.style.display = 'none';
@@ -384,7 +461,7 @@
         document.documentElement.lang = 'ar';
         btn.innerText = 'Switch to English / التبديل للإنجليزية';
         mainTitle.innerText = 'سياسة الخصوصية وحماية البيانات';
-        subTitle.innerText = 'تاريخ آخر تحديث: 2026 | متوافقة مع معايير Apple App Store و Google Play';
+        subTitle.innerText = 'منظومة وثبة للخدمات اللوجستية والتوصيل | تاريخ آخر تحديث: 2026';
       }
     }
   </script>
